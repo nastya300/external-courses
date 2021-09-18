@@ -1,7 +1,7 @@
 function newKey(propertyName, obj) {
   let objCopy = {};
   Object.assign(objCopy, obj);
-  if (!(propertyName in obj)) {
+  if (!obj.hasOwnProperty(propertyName)) {
     objCopy.propertyName = "new";
   }
   return objCopy;

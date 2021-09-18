@@ -1,5 +1,5 @@
 function hasProperty(propertyName, object) {
-  if (propertyName in object) {
+  if (object.hasOwnProperty(propertyName)) {
     return true;
   } else {
     return false;
