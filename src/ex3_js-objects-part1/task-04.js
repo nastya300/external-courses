@@ -4,7 +4,7 @@ function newKey(propertyName, obj) {
     objCopy[key] = obj[key];
   }
   if (!obj.hasOwnProperty(propertyName)) {
-    objCopy.propertyName = "new";
+    objCopy[propertyName] = "new";
   }
   return objCopy;
 }
