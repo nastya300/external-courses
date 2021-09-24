@@ -1,4 +1,4 @@
-function revertString(str) {
-  return str.split("").reverse().join("");
+function revertString(string) {
+  return string.split("").reverse().join("");
 }
 module.exports = revertString;

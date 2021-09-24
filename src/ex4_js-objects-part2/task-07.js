@@ -1,7 +1,7 @@
-function getTrimString(str, num) {
-  if (str.length > num) {
-    str = str.slice(0, num - 3) + "...";
+function getTrimString(string, num) {
+  if (string.length > num) {
+    string = string.slice(0, num - 3) + "...";
   }
-  return str;
+  return string;
 }
 module.exports = getTrimString;

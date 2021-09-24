@@ -1,16 +1,16 @@
-function insertStr(str, insertStr, index) {
-  str =
-    str
+function insertStr(string, insertStr, index) {
+  string =
+    string
       .split(" ")
       .slice(0, index + 1)
       .join(" ") +
     " " +
     insertStr +
     " " +
-    str
+    string
       .split(" ")
       .slice(index + 1)
       .join(" ");
-  return str;
+  return string;
 }
 module.exports = insertStr;

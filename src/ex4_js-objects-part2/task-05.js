@@ -1,4 +1,4 @@
-function isSearchStr(str, subStr) {
-  return str.includes(subStr);
+function isSearchStr(string, subString) {
+  return string.includes(subString);
 }
 module.exports = isSearchStr;

@@ -1,4 +1,4 @@
-function getStringFirstCapitalCharacter(str) {
-  return str[0].toUpperCase() + str.slice(1);
+function getStringFirstCapitalCharacter(string) {
+  return string[0].toUpperCase() + string.slice(1);
 }
 module.exports = getStringFirstCapitalCharacter;

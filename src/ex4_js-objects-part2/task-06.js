@@ -1,8 +1,8 @@
-function getStrUppercaseCharacterEachWord(str) {
-  str = str.split(" ");
-  for (let i = 0; i < str.length; i++) {
-    str[i] = str[i].charAt(0).toUpperCase() + str[i].substring(1);
+function getStrUppercaseCharacterEachWord(string) {
+  string = string.split(" ");
+  for (let i = 0; i < string.length; i += 1) {
+    string[i] = string[i].charAt(0).toUpperCase() + string[i].substring(1);
   }
-  return str.join(" ");
+  return string.join(" ");
 }
 module.exports = getStrUppercaseCharacterEachWord;
