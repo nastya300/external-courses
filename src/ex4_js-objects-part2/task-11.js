@@ -1,0 +1,3 @@
+function countEachCharacterString(str){
+    
+}
