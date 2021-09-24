@@ -5,4 +5,6 @@ function outputAndCountArrayElements(array) {
   console.log(array.length);
   return;
 }
+
 module.exports = outputAndCountArrayElements;
+

@@ -7,4 +7,6 @@ function isIdenticalArrayElements(array) {
   }
   return true;
 }
+
 module.exports = isIdenticalArrayElements;
+

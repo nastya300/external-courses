@@ -7,4 +7,6 @@ function numberOrString(x) {
     return undefined;
   } else return undefined;
 }
+
 module.exports = numberOrString;
+

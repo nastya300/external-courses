@@ -21,4 +21,6 @@ function isSimpleNumber(number) {
   }
   return result;
 }
+
 module.exports = isSimpleNumber;
+
