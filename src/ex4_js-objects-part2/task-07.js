@@ -4,3 +4,4 @@ function getTrimString(str, num) {
   }
   return str;
 }
+module.exports = getTrimString;

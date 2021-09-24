@@ -5,3 +5,4 @@ function getStrUppercaseCharacterEachWord(str) {
   }
   return str.join(" ");
 }
+module.exports = getStrUppercaseCharacterEachWord;
