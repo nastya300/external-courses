@@ -6,7 +6,7 @@ function deepCloneObject(obj) {
     let clone = Object.assign({}, obj);
     Object.keys(clone).forEach(function check(key) {
       if (typeof obj[key] === "object") {
-        clone[key] = deepClone(obj[key]);
+        clone[key] = deepCloneObject(obj[key]);
       } else {
         clone[key] = obj[key];
       }
