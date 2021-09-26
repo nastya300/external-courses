@@ -1,6 +1,7 @@
 function printKeysAndValuesObject(obj) {
-  for (let key of Object.keys(obj)) {
-    console.log(key, obj[key]);
+  let keys = Object.keys(obj);
+  for (let i = 0; i < keys.length; i++) {
+    console.log(keys[i], obj[keys[i]]);
   }
   return;
 }
