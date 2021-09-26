@@ -11,7 +11,14 @@ function deepCloneObject(obj) {
         clone[key] = obj[key];
       }
     });
+    if (Array.isArray(obj) && obj.length) {
+      clone.length = obj.length;
+      Array.from(clone);
+    } else {
+      Array.from(obj);
+    }
+    return clone;
   }
 }
 
-module.exports = deepCloneObject; 
+module.exports = deepCloneObject;
