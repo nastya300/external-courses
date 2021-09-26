@@ -1,4 +1,5 @@
 function deepCloneObject(obj) {
+   let clone ;
   for (let key in obj) {
     if (obj === null) {
       return null;
