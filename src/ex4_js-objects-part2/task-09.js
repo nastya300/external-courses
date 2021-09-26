@@ -1,5 +1,5 @@
-function insertStr(string, insertStr, index) {
-  string =
+function insertString(string, insertStr, index) {
+ let strResult =
     string
       .split(" ")
       .slice(0, index + 1)
@@ -11,6 +11,6 @@ function insertStr(string, insertStr, index) {
       .split(" ")
       .slice(index + 1)
       .join(" ");
-  return string;
+  return strResult;
 }
-module.exports = insertStr;
+module.exports = insertString;
