@@ -14,4 +14,4 @@ function deepCloneObject(obj) {
   }
 }
 
-module.exports = deepClone;
+module.exports = deepCloneObject; 
