@@ -8,4 +8,6 @@ function newKey(propertyName, obj) {
   }
   return objCopy;
 }
+
 module.exports = newKey;
+

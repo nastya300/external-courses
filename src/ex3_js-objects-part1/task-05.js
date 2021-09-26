@@ -5,4 +5,6 @@ function cloneObject(obj) {
   }
   return newObj;
 }
+
 module.exports = cloneObject;
+

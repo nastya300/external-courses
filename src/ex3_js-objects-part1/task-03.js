@@ -5,4 +5,6 @@ function hasProperty(propertyName, object) {
     return false;
   }
 }
+
 module.exports = hasProperty;
+
