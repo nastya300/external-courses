@@ -17,8 +17,9 @@ function deepCloneObject(obj) {
     } else {
       Array.from(obj);
     }
-    return clone;
+    
   }
+  return clone;
 }
 
 module.exports = deepCloneObject;
