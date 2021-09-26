@@ -1,13 +1,26 @@
-function deepClone(obj) {
-  const clObj = {};
-  for (const i in obj) {
-    if (obj[i] instanceof Object) {
-      clObj[i] = deepClone(obj[i]);
-      continue;
-    }
-    clObj[i] = obj[i];
+function deepCloneObject(obj) {
+  if (obj === null) {
+    return null;
   }
-  return clObj;
+  let clone = Object.assign({}, obj);
+  Object.keys(clone).forEach(function check(key) {
+    if (typeof obj[key] === "object") {
+      clone[key] = deepCloneObject(obj[key]);
+    } else {
+      clone[key] = obj[key];
+    }
+  });
+
+  if (Array.isArray(obj)) {
+    if (obj.length) {
+      clone.length = obj.length;
+      return Array.from(clone);
+    } else {
+      return Array.from(obj);
+    }
+  } else {
+    return clone;
+  }
 }
 
-module.exports = deepClone;
+module.exports = deepCloneObject;
