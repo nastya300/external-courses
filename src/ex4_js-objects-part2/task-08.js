@@ -6,4 +6,6 @@ function  getStringLowerCamelCase(str){
   }
   return str.join('');
 }
+
 module.exports = getStringLowerCamelCase;
+
