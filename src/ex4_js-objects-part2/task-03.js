@@ -1,4 +1,5 @@
 function getStrDeleteLastAndFirstSpace(string) {
-  return string.trim();
+  string=string.slice(1,-1);
+  return string;
 }
 module.exports = getStrDeleteLastAndFirstSpace;
