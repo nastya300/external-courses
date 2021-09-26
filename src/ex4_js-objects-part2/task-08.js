@@ -1,10 +1,10 @@
 function  getStringLowerCamelCase(str){
-  str=str.split(' ');
-  str[0]=str[0].toLowerCase();
-  for (let i=1; i< str.length;i+=1){
-      str[i] = str[i].charAt(0).toUpperCase() + str[i].substring(1).toLowerCase();
+let resultString=str.split(' ');
+resultString[0]=resultString[0].toLowerCase();
+  for (let i=1; i< resultString.length;i+=1){
+    resultString[i] = resultString[i].charAt(0).toUpperCase() + resultString[i].substring(1).toLowerCase();
   }
-  return str.join('');
+  return resultString.join('');
 }
 
 module.exports = getStringLowerCamelCase;
