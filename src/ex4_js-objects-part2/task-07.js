@@ -1,4 +1,5 @@
 function getTrimString(string, num) {
+  let resultString;
   if (string.length > num) {
     resultString = string.slice(0, num - 1) + "…";
   }
