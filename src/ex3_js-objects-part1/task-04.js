@@ -1,6 +1,6 @@
 function newKey(propertyName, obj) {
   let objCopy = {};
-  for (let key in obj) {
+  for (let key of Object.keys(obj)) {
     objCopy[key] = obj[key];
   }
   if (!obj.hasOwnProperty(propertyName)) {
@@ -10,4 +10,3 @@ function newKey(propertyName, obj) {
 }
 
 module.exports = newKey;
-

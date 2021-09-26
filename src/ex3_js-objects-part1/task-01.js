@@ -1,8 +1,11 @@
-let user = {};
-user.name = "Anastasia";
-user.age = "20";
-user["go to school"] = true;
-delete user["go to school"];
+function createUser() {
+  let user = {};
+  user.name = "Anastasia";
+  user.age = "20";
+  user["go to school"] = true;
+  delete user["go to school"];
+  return user;
+}
 
 module.exports = createUser;
 
