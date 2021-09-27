@@ -11,19 +11,18 @@ function deepCloneObject(obj) {
   if (Array.isArray(obj)) {
     if (obj.length) {
       clone.length = obj.length;
-      for (let i of obj){
-        if (typeof obj[i] === 'object') {
+      for (let i = 0; i < obj.length; i += 1) {
+        if (typeof obj[i] === "object") {
           clone[i] = deepCloneObject(obj[i]);
+
           return clone;
         }
       }
       return Array.from(clone);
     } else {
-
       return Array.from(obj);
     }
   } else {
-
     return clone;
   }
 }
