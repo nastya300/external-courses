@@ -14,7 +14,6 @@ function deepCloneObject(obj) {
       for (let i = 0; i < obj.length; i += 1) {
         if (typeof obj[i] === "object") {
           clone[i] = deepCloneObject(obj[i]);
-          return clone;
         }
       }
       return Array.from(clone);
