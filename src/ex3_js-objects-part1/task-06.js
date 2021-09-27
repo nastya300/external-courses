@@ -1,8 +1,6 @@
 function deepCloneObject(obj) {
-  if (obj === null) {
-    return null;
-  }
-  let clone = Object.assign({}, obj);
+  const clone = Object.assign({}, obj);
+
   Object.keys(clone).forEach(function check(key) {
     if (typeof obj[key] === "object") {
       clone[key] = deepCloneObject(obj[key]);
@@ -16,9 +14,11 @@ function deepCloneObject(obj) {
       clone.length = obj.length;
       return Array.from(clone);
     } else {
+
       return Array.from(obj);
     }
   } else {
+
     return clone;
   }
 }

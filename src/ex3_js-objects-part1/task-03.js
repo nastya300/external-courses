@@ -1,10 +1,5 @@
 function hasProperty(propertyName, object) {
-  if (object.hasOwnProperty(propertyName)) {
-    return true;
-  } else {
-    return false;
-  }
+  return object.hasOwnProperty(propertyName);
 }
 
 module.exports = hasProperty;
-
