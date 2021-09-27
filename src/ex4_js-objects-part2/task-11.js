@@ -7,8 +7,9 @@ function countEachCharacterString(str) {
       map[str[i]] = 1;
     }
   }
-  for (let key in Object.keys(map)) {
-    console.log(key, map[key]);
+  let keys = Object.keys(map);
+  for (let i = 0; i < keys.length; i++) {
+    console.log(keys[i], map[keys[i]]);
   }
 }
 
