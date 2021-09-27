@@ -11,10 +11,9 @@ function deepCloneObject(obj) {
   if (Array.isArray(obj)) {
     if (obj.length) {
       clone.length = obj.length;
-      for (let i = 0; i < obj.length; i += 1) {
+      for (let i of Object.keys(obj)) {
         if (typeof obj[i] === "object") {
           clone[i] = deepCloneObject(obj[i]);
-
           return clone;
         }
       }
