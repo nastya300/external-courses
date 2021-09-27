@@ -8,10 +8,15 @@ function deepCloneObject(obj) {
       clone[key] = obj[key];
     }
   });
-
   if (Array.isArray(obj)) {
     if (obj.length) {
       clone.length = obj.length;
+      for (let i of obj){
+        if (typeof obj[i] === 'object') {
+          clone[i] = deepCloneObject(obj[i]);
+          return clone;
+        }
+      }
       return Array.from(clone);
     } else {
 
