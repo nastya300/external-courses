@@ -1,6 +1,6 @@
 function getValueProperty(nameProperty, obj) {
   if (!(nameProperty in Object.getPrototypeOf(obj))) {
-    return null;
+    return undefined;
   }
   return obj[nameProperty];
 }
