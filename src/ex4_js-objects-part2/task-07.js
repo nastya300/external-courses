@@ -5,4 +5,6 @@ function getTrimString(string, num) {
   }
   return resultString;
 }
+
 module.exports = getTrimString;
+

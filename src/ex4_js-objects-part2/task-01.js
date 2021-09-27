@@ -4,4 +4,6 @@ function getValueProperty(nameProperty, obj) {
   }
   return obj[nameProperty];
 }
+
 module.exports = getValueProperty;
+

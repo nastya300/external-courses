@@ -6,4 +6,6 @@ function getStrUppercaseCharacterEachWord(string) {
   }
   return resultString.join(" ");
 }
+
 module.exports = getStrUppercaseCharacterEachWord;
+

@@ -13,4 +13,6 @@ function insertString(string, insertStr, index) {
       .join(" ");
   return strResult;
 }
+
 module.exports = insertString;
+
