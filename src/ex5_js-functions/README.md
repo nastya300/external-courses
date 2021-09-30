@@ -9,7 +9,7 @@ const calculator = Calculator();
 
 calculator.add();
 calculator.subtract();
-calculator.divide();
+calculator.divide();    
 calculator.multiply();
 
 module.exports = calculator;
