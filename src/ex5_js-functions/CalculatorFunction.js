@@ -44,5 +44,5 @@ const calculatorObj = {
 function Calculator() {
   return calculatorObj;
 }
-
 const calculator = Calculator();
+module.exports = calculator;
