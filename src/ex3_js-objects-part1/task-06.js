@@ -17,6 +17,9 @@ function deepCloneObject(obj) {
           clone[i] = deepCloneObject(obj[i]);
         }
       }
+      return clone;
+    } else {
+      return obj;
     }
   }
   return clone;
