@@ -1,5 +1,6 @@
 function deepCloneObject(obj) {
   let clone;
+  
   if (!Array.isArray(obj)) {
     clone = Object.assign({}, obj);
     Object.keys(clone).forEach(function check(key) {
