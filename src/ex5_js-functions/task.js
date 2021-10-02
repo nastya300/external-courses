@@ -36,7 +36,6 @@ const calculatorObj = {
     return calculatorObj.multiply;
   },
 };
-
 function Calculator() {
   return calculatorObj;
 }
