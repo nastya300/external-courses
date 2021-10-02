@@ -1,5 +1,5 @@
 function some(array, callback) {
-  for (let i = 0; i < array.length; i += 1) {
+  for (let i of array) {
     if (callback(array[i])) {
       return true;
     }
