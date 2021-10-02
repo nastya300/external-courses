@@ -28,7 +28,7 @@ const calculatorObj = {
       calculatorObj.state = calculatorObj.state / a;
     }
 
-    return calculatorObj.devide;
+    return calculatorObj.divide;
   },
 
   multiply(a) {
