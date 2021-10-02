@@ -34,7 +34,7 @@ describe('Ex6. JS Array methods', () => {
                 return item > 3;
             });
 
-            countIter.toBe(4);
+            expect(countIter).toBe(4);
         });
     });
 
