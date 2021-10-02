@@ -16,12 +16,12 @@ const calculatorObj = {
 
     return calculatorObj.add;
   },
-  substract(a) {
+  subtract(a) {
     if (calculatorObj.parameterCheck(a)) {
       calculatorObj.state = calculatorObj.state - a;
     }
 
-    return calculatorObj.substract;
+    return calculatorObj.subtract;
   },
   devide(a) {
     if (calculatorObj.parameterCheck(a)) {
@@ -45,6 +45,7 @@ const calculatorObj = {
 function Calculator() {
   return calculatorObj;
 }
+
 const calculator = Calculator();
 
 module.exports = calculator;
