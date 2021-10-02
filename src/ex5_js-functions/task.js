@@ -20,32 +20,26 @@ const calculatorObj = {
     if (calculatorObj.parameterCheck(a)) {
       calculatorObj.state = calculatorObj.state - a;
     }
-
     return calculatorObj.subtract;
   },
   divide(a) {
     if (calculatorObj.parameterCheck(a)) {
       calculatorObj.state = calculatorObj.state / a;
     }
-
     return calculatorObj.divide;
   },
 
   multiply(a) {
     if (calculatorObj.parameterCheck(a)) {
       calculatorObj.state = calculatorObj.state * a;
-    } else {
-      calculatorObj.state = calculatorObj.reset();
     }
-
-    return calculatorObj.multiply();
+    return calculatorObj.multiply;
   },
 };
 
 function Calculator() {
   return calculatorObj;
 }
-
 const calculator = Calculator();
 
 module.exports = calculator;
