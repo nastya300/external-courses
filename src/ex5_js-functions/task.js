@@ -23,7 +23,7 @@ const calculatorObj = {
 
     return calculatorObj.subtract;
   },
-  devide(a) {
+  divide(a) {
     if (calculatorObj.parameterCheck(a)) {
       calculatorObj.state = calculatorObj.state / a;
     }
