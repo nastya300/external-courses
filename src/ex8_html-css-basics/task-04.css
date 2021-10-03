@@ -1,0 +1,18 @@
+.links{
+    background-color: #1fb1b1;
+    width: 20%;
+}
+
+.pre{
+    background-color:hsl(120,100%,25%);
+    height:50px
+}
+
+.lists{
+    background-image: url(https://cdnimg.rg.ru/img/content/134/83/54/sneg1_d_850.jpg);
+    background-size: cover;
+}
+
+.paragraph{
+    background-color: 	rgb(255,165,0);
+}
