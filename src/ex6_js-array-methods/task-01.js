@@ -13,7 +13,7 @@ function slice(array, start, end) {
     NewEnd = array.length + NewEnd;
   }
   if (NewEnd > array.length) {
-    NewEnd = NewEnd.length;
+    NewEnd = array.length;
   }
 
   if (arguments.length === 3) {
