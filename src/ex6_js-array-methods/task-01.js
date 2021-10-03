@@ -1,11 +1,25 @@
 function slice(array, start, end) {
-    let clone;
-    if (arguments.length===3){
-        if ()
-        for (let i=start; i<end; i+=1){
-            clone[i] = array[i];
-        }
-    
+  let clone = [];
+  if (start < 0) {
+    start = array.length + start;
+  }
+  if (end < 0) {
+    end = array.length + end;
+  }
+  if (arguments.length === 3) {
+    for (let i = start; i < end; i += 1) {
+      clone.push(array[i]);
+    }
+  } else if (arguments.length === 2) {
+    for (let i = start; i < array.length; i += 1) {
+      clone.push(array[i]);
+    }
+  } else {
+    for (let i = 0; i < array.length; i += 1) {
+      clone.push(array[i]);
+    }
+  }
+  return clone;
 }
 
-[2,3,4,5,6,7,8,9,10,11]
+module.exports = slice;
