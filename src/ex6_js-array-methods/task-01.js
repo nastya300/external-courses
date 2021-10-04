@@ -12,15 +12,15 @@ function slice(array, start, end) {
   if (newEnd < 0) {
     newEnd = array.length + newEnd;
   }
-  if (NewEnd > array.length) {
-    NewEnd = array.length;
+  if (newEnd > array.length) {
+    newEnd = array.length;
   }
 
-  if (end || end===0) {
+  if (end || end === 0) {
     for (let i = newStart; i < NewEnd; i += 1) {
       clone.push(array[i]);
     }
-  } else if (start || start===0) {
+  } else if (start || start === 0) {
     for (let i = newStart; i < array.length; i += 1) {
       clone.push(array[i]);
     }
