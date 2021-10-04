@@ -17,7 +17,7 @@ function slice(array, start, end) {
   }
 
   if (end || end === 0) {
-    for (let i = newStart; i < NewEnd; i += 1) {
+    for (let i = newStart; i < newEnd; i += 1) {
       clone.push(array[i]);
     }
   } else if (start || start === 0) {
