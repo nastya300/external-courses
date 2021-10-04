@@ -1,6 +1,6 @@
 function slice(array, start, end) {
   let newStart = start;
-  let NewEnd = end;
+  let newEnd = end;
   let clone = [];
 
   if (newStart < 0) {
@@ -9,18 +9,18 @@ function slice(array, start, end) {
       newStart = 0;
     }
   }
-  if (NewEnd < 0) {
-    NewEnd = array.length + NewEnd;
+  if (newEnd < 0) {
+    newEnd = array.length + newEnd;
   }
   if (NewEnd > array.length) {
     NewEnd = array.length;
   }
 
-  if (arguments.length === 3) {
+  if (end || end===0) {
     for (let i = newStart; i < NewEnd; i += 1) {
       clone.push(array[i]);
     }
-  } else if (arguments.length === 2) {
+  } else if (start || start===0) {
     for (let i = newStart; i < array.length; i += 1) {
       clone.push(array[i]);
     }
@@ -29,6 +29,7 @@ function slice(array, start, end) {
       clone.push(array[i]);
     }
   }
+
   return clone;
 }
 
