@@ -44,6 +44,43 @@
         <label for="photo">Photography</label>
         <input id="photo" type="file" />
         <hr />
+        <p>
+          <label for="title">Title</label>
+          <select id="title" multiple>
+            <optgroup label="Technologies">
+              <option value="1">Web Master</option>
+              <option value="2">Database Administrator</option>
+              <option value="3">Computer-aided design</option>
+            </optgroup>
+           <optgroup label="Finance">
+            <option value="4">Economic Planning</option>
+            <option value="5">Management accounting</option>
+            <option value="6">Budgeting and planning</option>
+           </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="salary">Salary</label>
+          <input id="salary" type="range">
+        </p>
+        <p>
+         <textarea name="text" id="text" cols="30" rows="10" placeholder="Tell about yourself"></textarea>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Contact information</legend>
+        <p>
+          <label for="site">Site</label>
+          <input id="site" type="url">
+        </p> 
+        <p>
+          <label for="mail">Email</label>
+          <input id="mail" type="email">
+        </p>
+        <p>
+          <label for="phone">Site</label>
+          <input id="phone" type="tel">
+        </p>
       </fieldset>
     </form>
   </body>
