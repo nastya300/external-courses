@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+}
+
+#age {
+    width: 60px;
+}
+
+#country {
+    width: 60px;
+}
