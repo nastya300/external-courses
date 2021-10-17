@@ -1,0 +1,14 @@
+div{
+    background-color: #3da10b;
+    width: 100px;
+    height: 100px
+}
+
+th,td{
+    border: 1px solid black;  
+    background-color:yellow;
+    padding:5px
+}
+ table{
+    border-collapse: collapse;
+ }
