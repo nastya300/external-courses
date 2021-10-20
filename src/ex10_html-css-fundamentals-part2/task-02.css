@@ -7,14 +7,14 @@ body {
 }
 
 #country {
-    width: 60px;
+    width: 100px;
 }
 
-#title{
+#title {
     width: 180px;
     height: 140px;
 }
 
-#text{
+#text {
     width: 400px;
 }

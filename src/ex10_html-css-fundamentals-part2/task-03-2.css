@@ -1,0 +1,14 @@
+.mainTable th, .mainTable td {
+    color: #848da6;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.mainTable th {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.mainTable td {
+    padding: 13px;
+    text-align: left;
+}

@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form action="http://httpbin.org/get" method="GET">
       <fieldset>
         <legend>Personal data</legend>
         <p>
@@ -30,11 +30,14 @@
         </p>
         <p>
           <label for="age">Age</label>
-          <input id="age" type="number" />
+          <input id="age" type="number" min="18" max="101" />
         </p>
         <p>
           <label for="country">Country of Residence</label>
-          <select id="country"></select>
+          <select id="country">
+            <option value="">Ryazan</option>
+            <option value="">Moscow</option>
+          </select>
         </p>
         <p>
           <label for="city">City</label>
@@ -52,36 +55,50 @@
               <option value="2">Database Administrator</option>
               <option value="3">Computer-aided design</option>
             </optgroup>
-           <optgroup label="Finance">
-            <option value="4">Economic Planning</option>
-            <option value="5">Management accounting</option>
-            <option value="6">Budgeting and planning</option>
-           </optgroup>
+            <optgroup label="Finance">
+              <option value="4">Economic Planning</option>
+              <option value="5">Management accounting</option>
+              <option value="6">Budgeting and planning</option>
+            </optgroup>
           </select>
         </p>
         <p>
           <label for="salary">Salary</label>
-          <input id="salary" type="range">
+          <input id="salary" type="range" />
         </p>
         <p>
-         <textarea name="text" id="text" cols="30" rows="10" placeholder="Tell about yourself"></textarea>
+          <textarea
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Tell about yourself..."
+          ></textarea>
         </p>
       </fieldset>
       <fieldset>
         <legend>Contact information</legend>
         <p>
           <label for="site">Site</label>
-          <input id="site" type="url">
-        </p> 
+          <input id="site" type="url" />
+        </p>
         <p>
           <label for="mail">Email</label>
-          <input id="mail" type="email">
+          <input id="mail" type="email" />
         </p>
         <p>
-          <label for="phone">Site</label>
-          <input id="phone" type="tel">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" />
         </p>
       </fieldset>
+      <p>
+        <label for="pswd">Password</label>
+        <input required id="pswd" type="password" />
+      </p>
+      <p>
+        <input type="submit" />
+        <input type="reset" />
+      </p>
     </form>
   </body>
 </html>
