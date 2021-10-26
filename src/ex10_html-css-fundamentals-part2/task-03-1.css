@@ -1,0 +1,12 @@
+.mainTable tr:nth-child(odd) {
+    background-color: #e3eaf4;
+}
+
+.mainTable tr:nth-child(even) {
+    background-color: #f2f5fa;
+}
+
+.mainTable tr:hover {
+    background-color: #e2e5ea;
+    cursor: pointer;
+}
