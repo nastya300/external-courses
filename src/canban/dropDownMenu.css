@@ -89,25 +89,25 @@ footer {
     padding-left: 36px;
 }
 
-.menuProfil{
+.menuProfil {
     cursor: pointer;
 }
 
-.dropdown{
+.dropdown {
     padding: 3px 15px;
     width: auto;
-    background-color:#0067A3;
+    background-color: #0067A3;
     position: relative;
-    float :right;
+    float: right;
 }
 
-a{
+.nav-item {
     color: white;
     font-size: 12px;
     text-decoration: none;
 }
 
-a:hover{
+.nav-item:hover {
     cursor: pointer;
     text-decoration: underline;
 }
