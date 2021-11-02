@@ -82,9 +82,13 @@ footer {
 }
 
 .content {
-    height: 608px;
+    height: 609px;
 }
 
 .text-finished {
     padding-left: 36px;
+}
+
+.menuProfil{
+    cursor: pointer;
 }
