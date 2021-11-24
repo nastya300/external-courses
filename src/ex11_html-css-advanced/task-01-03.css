@@ -1,0 +1,69 @@
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(55deg, #12c412, #ad1858);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: rectangle 5s infinite;
+}
+
+@keyframes rectangle {
+    0% {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-size: 200%;
+        background-position: 80% 45%;
+        transform: none;
+    }
+    20% {
+        border-radius: 0%;
+        width: 200px;
+        height: 200px;
+        background-size: 300%;
+        background-position: 80% 45%;
+        transform: none;
+    }
+    36% {
+        border-radius: 0%;
+        width: 200px;
+        height: 200px;
+        background-size: 300%;
+        background-position: 60% 100%;
+        transform: none;
+    }
+    52% {
+        border-radius: 0%;
+        width: 80px;
+        height: 80px;
+        transform: skew(30deg, 20deg);
+        background-size: 300%;
+        background-position: 60% 100%;
+    }
+    68% {
+        transform: skew(30deg, 20deg) rotate(360deg);
+        border-radius: 0%;
+        width: 80px;
+        height: 80px;
+        background-size: 300%;
+        background-position: 60% 100%;
+    }
+    84% {
+        transform: skew(30deg, 20deg) rotate(360deg);
+        border-radius: 0%;
+        width: 80px;
+        height: 80px;
+        background-size: 300%;
+        background-position: 20% 80%;
+    }
+    100% {
+        border-radius: 50%;
+        background-size: 300%;
+        background-position: 60% 100%;
+    }
+}

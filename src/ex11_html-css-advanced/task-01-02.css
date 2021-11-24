@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.block-item {
+    width: 200px;
+    height: 100%;
+    background-color: tomato;
+}
+
+.block-circle {
+    width: 300px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: aqua;
+    width: 30px;
+    height: 50px;
+    position: relative;
+    top: 32%;
+    animation: jump 3s linear 3s infinite alternate-reverse;
+}
+
+@keyframes jump {
+    0% {
+        width: 30px;
+    }
+    5% {
+        width: 50px;
+        left: 1%;
+    }
+    45% {
+        left: 80%;
+        width: 50px;
+    }
+    50% {
+        left: 90%;
+        width: 30px;
+    }
+    55% {
+        left: 80%;
+        width: 50px;
+    }
+    95% {
+        width: 50px;
+        left: 1%;
+    }
+    100% {
+        width: 30px;
+    }
+}
