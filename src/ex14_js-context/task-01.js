@@ -49,12 +49,5 @@ const Calculator = {
         Calculator.setState(500);
     }
 };
+
 module.exports=Calculator;
-
-
-
-
-
-
-
-
