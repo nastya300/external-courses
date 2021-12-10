@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="header">
+        <div class="container">
+            <div class="burger-menu">
+                <div class="line-menu">
+                    <div class="circle-menu"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="line-menu">
+                    <div class="circle-menu"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="line-menu">
+                    <div class="circle-menu"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+            <div class="heading">Awesome Kanban Board</div>
+        </div>
+        <div class="container">
+            <button class="newList">
+                <img src="img/add.png " alt="#" />Create new list
+            </button>
+            <img class="avatar" src=" img/user-avatar.jpg" alt="#" />
+            <img class="menuProfil" id="menu-vector" src=" img/about.png" alt="#" />
+        </div>
+    </header>
+    </div>
+    <main>
+    <div class="backlog backlog-1" id="back">
+        <div class="zag" id="zag">
+            <p class="text-item-task">Backlog</p>
+            <p class="text-item-task">•••</p>
+        </div>
+       <div class="tasks" id="task">
+    <div class="task"> <p class="text-item-task"> Login page - perfomance issues</p></div>
+       <div class="task"> <p class="text-item-task">Sprint bugfix</p></div>
+       </div>
+        <div class="addCard"  id="addBtn">
+            <button  class="addCard-button text-item-task" id="btn"><img src="Vector.png" alt=""> Add card</button>
+        </div>
+    </div>
+        <div class="backlog backlog-2" id="backReady">
+        <div class="zag">
+            <p class="text-item-task">Ready</p>
+            <p class="text-item-task">•••</p>
+        </div>
+        <div class="tasks" id="task-r">
+            <div class="task"> <p class="text-item-task">Shop page - perfomance issues</p></div>
+            <div class="task"> <p class="text-item-task">Checkout bugfix</p></div>
+            <div class="task"> <p class="text-item-task">Shop bug1</p></div>
+        </div>
+    
+            <div class="addCard"  id="addBtnReady">
+                <button  class="addCard-button text-item-task" id="btnReady"><img src="Vector.png" alt=""> Add card</button>
+            </div>
+    </div>
+       <div class="backlog backlog-3">
+           <div class="zag">
+                <p class="text-item-task">In progress</p>
+               <p class="text-item-task">•••</p>
+           </div>
+           <div class="tasks">
+               <div class="task"> <p class="text-item-task">User page – performance issues</p></div>
+           <div class="task"> <p class="text-item-task">Auth bugfix</p></div> 
+            </div>
+            <div class="addCard">
+             <button class="addCard-button text-item-task"><img src="Vector.png" alt=""> Add card</button>
+            </div>
+        </div>
+       <div class="backlog backlog-4">
+           <div class="zag">
+               <p class="text-item-task">Finished</p>
+               <p class="text-item-task">•••</p>
+           </div>
+           <div class="tasks">
+               <div class="task"> <p class="text-item-task">Main page – performance issues</p></div>
+               <div class="task"> <p class="text-item-task">Main page bugfix</p></div>
+           </div>
+           <div class="addCard" >
+               <button class="addCard-button text-item-task"><img src="Vector.png" alt=""> Add card</button>
+           </div>
+       </div>
+    </main>
+    <footer>
+        <div class="container container-task-footer">
+            <p class="text-active">Active tasks:&lt;N&gt;</p>
+            <p class="text-finished">Finished tasks:&lt;N&gt;</p>
+        </div>
+        <div class="container container-author-footer">
+            <p class="text-author">Kanban board by &lt;YEAR&gt;, &lt;YEAR&gt;</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</html>
