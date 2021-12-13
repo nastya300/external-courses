@@ -140,8 +140,12 @@ main{
     margin-top: 5px;
 }
 
-.text-item-task{
+.text-item-task{    
     margin: 0;
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 .task{
@@ -167,13 +171,15 @@ input:focus{
 }
 
 .dropdown{
-    justify-content: end;
-    margin-top: 12px;
-    width: 500px;
+    
+    position: absolute;
+    right: 0;
+    width: 100px;
     height: auto;
     background-color: blue;
     border-radius: 5px;
     padding: 1px 5px;
+    font-size: 12px;
 }
 
 .dropBtn{
