@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    background-color: #0079be;
+}
+
+header {
+    display: flex;
+    background-color: #0067A3;
+    padding-left: 21px;
+    padding-right: 6px;
+    justify-content: space-between;
+}
+
+.burger-line {
+    width: 19px;
+    height: 1.41px;
+    background-color: white;
+}
+
+.burger-menu {
+    width: auto;
+    height: auto;
+}
+
+.circle-menu {
+    border-radius: 50%;
+    width: 7.03px;
+    height: 7.03px;
+    background-color: #0067A3;
+    border: 2px solid white;
+    margin-right: 2.81px;
+}
+
+.line-menu {
+    display: flex;
+    align-items: center;
+    margin: 3px auto;
+}
+
+.heading {
+    font-size: 28px;
+    padding: 11px 15px;
+}
+
+.newList {
+    width: 181px;
+    height: 33px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    border: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin: auto 6px auto 50px;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    background-color: #0067A3;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 67px;
+    padding-right: 24px;
+}
+
+
+
+.text-finished {
+    padding-left: 36px;
+}
+
+.menuProfil:hover {
+    cursor: pointer;
+}
+
+main{
+    height: auto;
+}
+
+.backlog{
+    max-height: 538px;
+    float: left;
+    overflow-y: auto;
+    background-color: #EBECF0;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    padding: 12px 12px;
+    margin: 20px 5px 0 19px;
+    width: 282px;
+
+}
+
+
+.zag{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addCard{
+    margin-top: 17px;
+}
+
+.addCard-button{
+    border-style: none;
+    font-size: 18px;
+
+}
+
+.addCard-button:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    color: blue;
+
+}
+
+.addCard-text{
+    color: #5E6C84;
+    margin-top: 5px;
+}
+
+.text-item-task{    
+    margin: 0;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.task{
+    background-color: white;
+    padding: 7px 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+input{
+    padding: 7px 8px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 18px;
+}
+
+input:focus{
+    border: none;
+
+}
+
+.dropdown{
+    
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: auto;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 12px;
+}
+
+.dropBtn{
+    background: transparent;
+    border: 0;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    color: white;
+    margin-top: 15px;
+}
+
+li:hover{
+    cursor: pointer;
+}
